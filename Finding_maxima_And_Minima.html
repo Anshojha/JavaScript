@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           var arr = [];
+        for (i = 0; i < 10; i++) {
+            arr[i] = parseInt(prompt("Enter the value :"));
+        }
+        console.log(arr);
+        arr.sort(function(a, b){return a - b});
+        console.log("Sorted Array:", arr);
+        var maxima = arr[9];
+        var minima = arr[0];
+        console.log("Maximu number:",maxima);
+        console.log("Minimum number:",minima);
+    </script>
+</body>
+</html>

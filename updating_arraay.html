@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Updating the Array</title>
+</head>
+
+<body>
+    <script>
+        var arr = [];
+         var size = parseInt(prompt("Enter the size of array:"));
+        for (i = 0; i<size; i++) {
+            arr[i] = parseInt(prompt("Enter the value in array:"));
+        }
+        console.log("Before inserting value",arr);
+        var Elemente = parseInt(prompt("Enter the number you want to insert :"));
+        
+        var indexi = parseInt(prompt("Enter the index :"));
+        
+        for (i in arr) {
+            if (i == indexi) {
+                arr[i] = Elemente;
+            }
+        }
+        console.log("After inserting the value",arr);
+
+    </script>
+</body>
+
+</html>

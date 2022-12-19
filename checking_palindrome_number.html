@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Palindrome Number</title>
+</head>
+<body>
+    <script>
+        var arr = [],f=1;
+        for (i = 0; i < 5; i++) {
+            arr[i] = parseInt(prompt("Enter the value :"));
+        }
+        l=arr.length-1;
+        for (let i = 0; i < arr.length/2; i++) {
+              if(arr[i]==arr[l--]){
+             
+              f=1;
+              
+          }
+          else{
+            f=0;
+          }
+            
+        }
+        if(f==1){
+            console.log("Palindrome");
+        }
+        else {
+            console.log("Not Palindrome");
+        }
+    </script>
+</body>
+</html>

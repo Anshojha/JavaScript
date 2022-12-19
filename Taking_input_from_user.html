@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello There</h1>
+    <script>
+        var mark =[];
+        var m;
+        do {
+            m=parseInt(prompt("Enter the number of the student:"));
+            mark.push(m);
+            ch=prompt("Do you want to continiue Y/N:");
+            ch=ch.toLowerCase();
+            
+        } while (ch=='y');
+        console.log(mark);
+        document.write(mark);
+        l =mark.length;
+        console.log(l);
+        document.write(l);
+        for(i=0;i<l;i++){
+            console.log("Item",i+1,":",1000+mark[i]);
+        }
+        
+    </script>
+</body>
+</html>
