@@ -45,3 +45,41 @@
 // }, (error) =>{
 //    console.log(error.name + ' ' + error.message)
 // })
+
+
+
+/* ******* This is the use of Promise ******** */
+
+
+
+const userLeft = false
+const userWatcingCatMeme =false
+
+function watchTutorialPromise() {    // No need of Parameters 
+
+return new Promise((resolve , reject)=>{
+   if (userLeft) {
+      reject({
+         name: 'User Left',
+         message: '('
+      })
+   }
+   else if (userWatcingCatMeme) {
+      reject({
+       name : 'User Watching Cat meme',
+       message : 'Message <3'
+      })
+   }
+   else{
+      resolve('Thumbs up and subscribe!!')
+   }
+})
+
+}
+
+
+watchTutorialPromise().then((message)=>{
+   console.log('success :'+ message);
+}).catch((error) =>{
+   console.log(error.name + ' ' + error.message)
+})
