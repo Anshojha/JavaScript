@@ -8,14 +8,13 @@ const items  = [
     {name : 'Keyboard' , price : 300},
 ]
 
- items.forEach((item)=>{
-    return console.log(item );
-})
- items.forEach((item)=>{
-    return console.log(item.price );
-})
+ const total = items.reduce((currneTotal, item)=>{
+    return item.price + currneTotal;
+ },0);
 
- items.forEach((item)=>{
-    return console.log(item.name );
-})
+ console.log("First total is "+total);
+ const total2 = items.reduce((currneTotal, item)=>{
+    return item.price + currneTotal;
+ },10);
 
+ console.log("Second total is "+total2);
